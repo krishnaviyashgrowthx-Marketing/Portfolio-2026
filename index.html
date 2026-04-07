@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0F172A">
-    <title>Krishnaviyash KS | Digital Marketing Executive</title>
-    <meta name="description" content="Digital Marketing Executive specializing in B2B marketing, high-ticket funnels, and performance marketing. Scaling 6 global brands under RBAS Group.">
+    <title>Krishnaviyash KS | Performance Marketing & B2B Growth Strategist</title>
+    <meta name="description" content="Performance Marketing & B2B Growth Strategist specializing in B2B marketing, high-ticket funnels, and performance marketing. Scaling 6 global brands under RBAS Group.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230F172A' font-weight='bold'>K</text></svg>" type="image/svg+xml">
 
     <script>
         tailwind.config = {
@@ -171,6 +174,15 @@
             .cursor-dot, .cursor-ring, .curve-container { display: none !important; }
         }
 
+        /* Mobile Touch Optimization */
+        @media (max-width: 767px) {
+            a, button, [role="button"] { min-height: 48px !important; min-width: 48px !important; }
+            * { transition-duration: 100ms !important; }
+            .skill-card { animation: none !important; opacity: 1 !important; }
+            .reveal, .reveal-left { animation: none !important; opacity: 1 !important; }
+            .reveal-bento { animation: none !important; opacity: 1 !important; }
+        }
+
         /* ─── SCROLL REVEAL ─────────────────────────────────────── */
         .reveal {
             opacity: 0; transform: translateY(24px);
@@ -193,6 +205,17 @@
             }
             .marquee-track, .marquee-brands-track,
             .organic-curve, .animate-drop-line, .rocket-wrapper { animation: none !important; }
+        }
+
+        /* Mobile Performance: Disable costly animations */
+        @media (max-width: 767px) {
+            .organic-curve, .rocket-wrapper, .float-icon { animation: none !important; }
+            .skill-icon, .emoji-pulse, .emoji-gently, .emoji-rotate, .emoji-bounce, .emoji-twinkle { animation: none !important; opacity: 1 !important; }
+            .luxury-blur-reveal, .luxury-blur-reveal-slow, .luxury-blur-reveal-fast { animation: none !important; opacity: 1 !important; }
+            .hero-chart-path, .growth-line { animation: none !important; stroke-dashoffset: 0 !important; }
+            .growth-dot { animation: none !important; opacity: 1 !important; }
+            .marquee-track { animation: scroll-skills 80s linear infinite !important; }
+            .marquee-brands-track { animation: scroll-brands 50s linear infinite !important; }
         }
 
         /* ─── BG MESH ───────────────────────────────────────────── */
@@ -511,6 +534,13 @@
             transform: scale(1.05);
         }
 
+        /* Disable transform on mobile for performance */
+        @media (max-width: 767px) {
+            .skill-card:hover .skill-tag {
+                transform: scale(1);
+            }
+        }
+
         .skill-tag-primary,
         .skill-tag-gold {
             animation: tagPulse 2s ease-in-out infinite !important;
@@ -547,6 +577,13 @@
             box-shadow: 0 20px 50px -10px rgba(245,158,11,0.2), var(--sh-sm);
             border-color: #F59E0B;
             z-index: 10;
+        }
+
+        @media (max-width: 767px) {
+            .skill-bento-card:hover {
+                transform: none;
+                box-shadow: var(--sh-sm);
+            }
         }
 
         .skill-bento-card:hover::before { opacity: 1; }
@@ -602,6 +639,13 @@
             box-shadow: 0 40px 80px -20px rgba(15,23,42,0.12), 
                         0 20px 40px -20px rgba(245,158,11,0.25);
             border-color: rgba(245,158,11,0.3);
+        }
+
+        @media (max-width: 767px) {
+            .exp-card:hover {
+                transform: none;
+                box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+            }
         }
 
         /* Bullet-proof structured lists */
@@ -1629,6 +1673,15 @@
         }
         .wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.55); }
         .wa-float:active { transform: scale(0.95); }
+
+        @media (max-width: 767px) {
+            .wa-float {
+                animation: none !important;
+                opacity: 1 !important;
+            }
+            .wa-float:hover { transform: scale(1.05); }
+            .wa-float:active { transform: scale(0.95); }
+        }
         .wa-float svg { width: 28px; height: 28px; }
 
         /* Tooltip on hover */
@@ -1807,7 +1860,7 @@
                         <!-- Live badge -->
                         <div class="hero-ticker mb-6 w-fit">
                             <div class="ticker-dot" aria-hidden="true"></div>
-                            Digital Marketing Executive · RBAS Group
+                            Performance Marketing & B2B Growth Strategist · RBAS Group
                         </div>
 
                         <!-- Headline -->
@@ -2106,7 +2159,7 @@
                      style="padding:clamp(1.5rem,5vw,4rem);">
                     <p class="font-bold text-brand-blue leading-tight tracking-tight mb-6"
                        style="font-size:clamp(1.2rem,3.5vw,2.5rem);">
-                        Results-driven Digital Marketing Executive generating
+                        Results-driven Performance Marketing & B2B Growth Strategist generating
                         <strong class="text-brand-gold font-black block leading-none py-2"
                                 style="font-size:clamp(2.2rem,7vw,4.5rem);">2+ Crores</strong>
                         in revenue through performance marketing, lead generation, and conversion optimization.
@@ -2428,7 +2481,7 @@
                             <article class="exp-card glass-card rounded-[var(--r-2xl)] p-8 md:p-10 border border-gray-100">
                                 <div class="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-4 mb-8">
                                     <div>
-                                        <h3 class="font-display font-black text-2xl md:text-3xl text-brand-blue tracking-tight">Digital Marketing Executive</h3>
+                                        <h3 class="font-display font-black text-2xl md:text-3xl text-brand-blue tracking-tight">Performance Marketing & B2B Growth Specialist</h3>
                                         <p class="text-brand-muted font-bold mt-1">RBAS Group · Bangalore</p>
                                     </div>
                                     <span class="text-xs font-black tracking-widest text-brand-gold bg-amber-50 px-4 py-2 rounded-full border border-amber-100 whitespace-nowrap self-start uppercase">Aug 2025 – Present</span>
@@ -2666,7 +2719,7 @@
                                     Start Your Journey
                                 </a>
                                 <a href="#" class="btn-outline text-base justify-center px-8" style="border-color: #E2E8F0; color: #0F172A; background: rgba(255,255,255,0.6);">
-                                    See Case Studies
+                                    See Work
                                 </a>
                             </div>
                         </div>
@@ -3194,12 +3247,13 @@
 
         const pRM  = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const fine = window.matchMedia('(pointer: fine)').matches;
+        const mobile = window.matchMedia('(max-width: 767px)').matches;
 
         // ── Custom cursor ────────────────────────────────────────────
         const dot  = document.querySelector('.cursor-dot');
         const ring = document.querySelector('.cursor-ring');
 
-        if (fine && !pRM && dot && ring) {
+        if (fine && !pRM && !mobile && dot && ring) {
             document.body.classList.add('cursor-enabled');
             let mx = innerWidth / 2, my = innerHeight / 2;
             let rx = mx, ry = my, rafId = null;
@@ -3227,20 +3281,23 @@
         }
 
         // ── Scroll reveal ────────────────────────────────────────────
-        new IntersectionObserver((entries, obs) => {
+        const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(e => {
                 if (!e.isIntersecting) return;
-                e.target.classList.add('active');
-                obs.unobserve(e.target);
-            });
-        }, { threshold: 0.1 }).observe && document.querySelectorAll('.reveal, .reveal-left').forEach(el => {
-            new IntersectionObserver((entries, obs) => {
-                entries.forEach(e => {
-                    if (!e.isIntersecting) return;
+                if (!mobile) {
                     e.target.classList.add('active');
-                    obs.unobserve(e.target);
-                });
-            }, { threshold: 0.1 }).observe(el);
+                } else {
+                    // On mobile, show immediately without animation
+                    e.target.classList.add('active');
+                    e.target.style.opacity = '1';
+                    e.target.style.transform = 'none';
+                }
+                revealObserver.unobserve(e.target);
+            });
+        }, { threshold: mobile ? 0.05 : 0.1 });
+        
+        document.querySelectorAll('.reveal, .reveal-left').forEach(el => {
+            revealObserver.observe(el);
         });
 
         // IntersectionObserver for all Staggered Grid/Timeline cards
@@ -3248,12 +3305,15 @@
         const bentoObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Respect the transition-delay defined in HTML
+                    if (mobile) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'scale(1) translateY(0)';
+                    }
                     entry.target.classList.add('active');
                     bentoObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: mobile ? 0.05 : 0.15 });
 
         bentoCards.forEach(card => bentoObserver.observe(card));
 
@@ -3379,14 +3439,17 @@
         // });
 
         // ── Contact form ─────────────────────────────────────────────
+        // Note: Contact form HTML elements not present - form handling disabled
+        // If you want to enable contact form, add the required HTML elements with IDs:
+        // contact-form (form), cf-name (input), cf-email (input), cf-message (textarea)
         const form   = document.getElementById('contact-form');
         const status = document.getElementById('form-status');
         if (form && status) {
             form.addEventListener('submit', e => {
                 e.preventDefault();
-                const n = form.querySelector('#cf-name').value.trim();
-                const em = form.querySelector('#cf-email').value.trim();
-                const msg = form.querySelector('#cf-message').value.trim();
+                const n = form.querySelector('#cf-name')?.value.trim();
+                const em = form.querySelector('#cf-email')?.value.trim();
+                const msg = form.querySelector('#cf-message')?.value.trim();
                 if (!n || !em || !msg) {
                     status.textContent = 'Please fill in all fields.';
                     status.classList.remove('hidden','text-brand-gold');
@@ -3421,6 +3484,8 @@
 
         // ── Timeline scroll animation ──────────────────────────────
         (function () {
+            if (mobile) return; // Disable complex timeline animation on mobile
+            
             const timelineWrapper = document.querySelector('.timeline-wrapper');
             const timelineLine    = document.querySelector('.timeline-line');
             if (!timelineWrapper || !timelineLine) return;
@@ -3435,15 +3500,12 @@
                 const currentScroll = scrollY + viewportHeight;
 
                 if (currentScroll < wrapperTop) {
-                    // Above wrapper
                     timelineLine.style.setProperty('--scroll-height', '0%');
                     timelineLine.classList.remove('scroll-active');
                 } else if (scrollY > wrapperBottom) {
-                    // Below wrapper (fully visible)
                     timelineLine.style.setProperty('--scroll-height', '100%');
                     timelineLine.classList.add('scroll-active');
                 } else {
-                    // In view
                     const scrollProgress = (currentScroll - wrapperTop) / (wrapperBottom - wrapperTop + viewportHeight);
                     const height = Math.max(0, Math.min(1, scrollProgress)) * 100;
                     timelineLine.style.setProperty('--scroll-height', height + '%');
@@ -3456,12 +3518,13 @@
                 if (!ticking) { requestAnimationFrame(update); ticking = true; }
             }, { passive: true });
 
-            // Initialize
             requestAnimationFrame(update);
         })();
 
         // ── Scroll-rise for floating icons ──────────────────────────────────
         (function () {
+            if (mobile) return; // Disable on mobile for better performance
+            
             const icons = document.querySelectorAll('.float-icon');
             if (!icons.length) return;
 
@@ -3517,5 +3580,10 @@
         </svg>
     </a>
 
+
+<section>
+<h2>₹8.5 Cr+ Revenue Generated | 406x ROAS | 300+ B2B Leads</h2>
+</section>
 </body>
+
 </html>
