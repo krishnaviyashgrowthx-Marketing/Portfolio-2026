@@ -2438,6 +2438,16 @@
             color: rgba(212,160,23,0.15);
             line-height: 1;
         }
+
+        /* Mobile specific fixes for DadoDec */
+        @media (max-width: 640px) {
+            .dado-kpi-grid { grid-template-columns: 1fr; }
+            .dado-stat-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+            .dado-stat-pill { padding: 0.5rem 0.25rem; }
+            .dado-ratio-row { padding: 0.65rem 0.5rem; }
+            .dado-footer-bar { padding: 1rem; }
+            .dado-channel { padding: 0.7rem 0.5rem; }
+        }
 </style>
 </head>
 <body class="antialiased">
@@ -3354,7 +3364,7 @@
 
                 <!-- KPI Hero Cards -->
                 <div class="reveal dado-kpi-grid mb-6">
-                    <div class="dado-kpi">
+                    <div class="dado-kpi reveal-bento" style="transition-delay: 100ms;">
                         <div class="flex items-center justify-between mb-3">
                             <span class="dado-kpi-label">Total Revenue</span>
                             <span style="font-size:1.4rem;">📈</span>
@@ -3362,7 +3372,7 @@
                         <div class="dado-kpi-value">₹1,27,55,691</div>
                         <div class="dado-kpi-sub">Closed Revenue</div>
                     </div>
-                    <div class="dado-kpi">
+                    <div class="dado-kpi reveal-bento" style="transition-delay: 200ms;">
                         <div class="flex items-center justify-between mb-3">
                             <span class="dado-kpi-label">Marketing Investment</span>
                             <span style="font-size:1.4rem;">💰</span>
@@ -3370,7 +3380,7 @@
                         <div class="dado-kpi-value">₹5,10,415</div>
                         <div class="dado-kpi-sub">Total Spend</div>
                     </div>
-                    <div class="dado-kpi">
+                    <div class="dado-kpi reveal-bento" style="transition-delay: 300ms;">
                         <div class="flex items-center justify-between mb-3">
                             <span class="dado-kpi-label">Blended ROAS</span>
                             <span style="font-size:1.4rem;">🚀</span>
@@ -3378,7 +3388,7 @@
                         <div class="dado-kpi-value">24.99x</div>
                         <div class="dado-kpi-sub">Return on Marketing</div>
                     </div>
-                    <div class="dado-kpi">
+                    <div class="dado-kpi reveal-bento" style="transition-delay: 400ms;">
                         <div class="flex items-center justify-between mb-3">
                             <span class="dado-kpi-label">Media Contribution</span>
                             <span style="font-size:1.4rem;">📊</span>
@@ -3392,7 +3402,7 @@
                 <div class="reveal dado-main-grid mb-6">
 
                     <!-- Marketing Performance Overview -->
-                    <div class="dado-card">
+                    <div class="dado-card reveal-bento" style="transition-delay: 100ms;">
                         <div class="dado-card-title">
                             <span class="dado-card-dot" style="background:linear-gradient(135deg,#6366F1,#818CF8);"></span>
                             Marketing Performance Overview
@@ -3467,7 +3477,7 @@
                     </div>
 
                     <!-- Revenue Performance -->
-                    <div class="dado-card">
+                    <div class="dado-card reveal-bento" style="transition-delay: 250ms;">
                         <div class="dado-card-title">
                             <span class="dado-card-dot" style="background:linear-gradient(135deg,#10B981,#059669);"></span>
                             Revenue Performance
@@ -3505,7 +3515,7 @@
                 <div class="reveal dado-bottom-grid mb-6">
 
                     <!-- Business Highlights -->
-                    <div class="dado-card">
+                    <div class="dado-card reveal-bento" style="transition-delay: 400ms;">
                         <div class="dado-card-title">
                             <span class="dado-card-dot" style="background:linear-gradient(135deg,#F59E0B,#F97316);"></span>
                             Business Highlights
@@ -3535,7 +3545,7 @@
                     </div>
 
                     <!-- Marketing Channel Efficiency -->
-                    <div class="dado-card">
+                    <div class="dado-card reveal-bento" style="transition-delay: 100ms;">
                         <div class="dado-card-title">
                             <span class="dado-card-dot" style="background:linear-gradient(135deg,#3B82F6,#6366F1);"></span>
                             Marketing Channel Efficiency
@@ -3609,7 +3619,7 @@
                         </div>
 
                         <!-- Key Ratios -->
-                        <div class="dado-card" style="flex:1;">
+                        <div class="dado-card reveal-bento" style="transition-delay: 250ms; flex:1;">
                             <div class="dado-card-title">
                                 <span class="dado-card-dot" style="background:linear-gradient(135deg,#14B8A6,#06B6D4);"></span>
                                 Key Ratios
@@ -3698,15 +3708,15 @@
 
                 <div class="relative">
                     <!-- Central Animated Track -->
-                    <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-2 bg-brand-light transform -translate-x-1/2 rounded-full border border-gray-100 shadow-inner overflow-hidden" aria-hidden="true">
+                    <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-2 bg-brand-light transform -translate-x-1/2 rounded-full border border-gray-100 shadow-inner overflow-hidden" aria-hidden="true">
                         <div class="absolute left-0 w-full h-40 bg-gradient-to-b from-transparent via-brand-accent to-brand-gold animate-drop-line rounded-full"></div>
                     </div>
 
                     <!-- Item 1: DadoDec Interior Centre (Staggered Right) -->
                     <div class="reveal-bento relative flex w-full mb-20 group" style="transition-delay: 0ms;">
-                        <div class="absolute left-0 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">🛋️</div>
+                        <div class="absolute left-8 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">🛋️</div>
                         
-                        <div class="w-full pl-20 md:pl-0 md:w-[46%] md:ml-auto md:pl-12">
+                        <div class="w-full pl-24 md:pl-0 md:w-[46%] md:ml-auto md:pl-12">
                             <article class="exp-card glass-card rounded-[var(--r-2xl)] p-8 md:p-10 border border-gray-100">
                                 <div class="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-4 mb-8">
                                     <div>
@@ -3751,9 +3761,9 @@
 
                     <!-- Item 2: RBAS Group (Staggered Left) -->
                     <div class="reveal-bento relative flex w-full mb-20 group" style="transition-delay: 100ms;">
-                        <div class="absolute left-0 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">🏢</div>
+                        <div class="absolute left-8 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">🏢</div>
                         
-                        <div class="w-full pl-20 md:pl-0 md:w-[46%] md:mr-auto md:pr-12 md:text-right">
+                        <div class="w-full pl-24 md:pl-0 md:w-[46%] md:mr-auto md:pr-12 md:text-right">
                             <article class="exp-card glass-card rounded-[var(--r-2xl)] p-8 md:p-10 border border-gray-100">
                                 <div class="flex flex-col xl:flex-row-reverse xl:justify-between xl:items-start gap-4 mb-8">
                                     <div>
@@ -3799,9 +3809,9 @@
 
                     <!-- Item 3: Gupio (Staggered Right) -->
                     <div class="reveal-bento relative flex w-full mb-20 group" style="transition-delay: 200ms;">
-                        <div class="absolute left-0 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">📈</div>
+                        <div class="absolute left-8 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">📈</div>
                         
-                        <div class="w-full pl-20 md:pl-0 md:w-[46%] md:ml-auto md:pl-12">
+                        <div class="w-full pl-24 md:pl-0 md:w-[46%] md:ml-auto md:pl-12">
                             <article class="exp-card glass-card rounded-[var(--r-2xl)] p-8 md:p-10 border border-gray-100">
                                 <div class="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-4 mb-8">
                                     <div>
@@ -3825,9 +3835,9 @@
 
                     <!-- Item 4: AK Pets (Staggered Left) -->
                     <div class="reveal-bento relative flex w-full group" style="transition-delay: 300ms;">
-                        <div class="absolute left-0 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">🐾</div>
+                        <div class="absolute left-8 md:left-1/2 top-0 transform -translate-x-1/2 w-16 h-16 rounded-full border-4 border-white bg-white text-3xl flex items-center justify-center shadow-xl z-20 transition-transform duration-500 group-hover:scale-110">🐾</div>
                         
-                        <div class="w-full pl-20 md:pl-0 md:w-[46%] md:mr-auto md:pr-12 md:text-right">
+                        <div class="w-full pl-24 md:pl-0 md:w-[46%] md:mr-auto md:pr-12 md:text-right">
                             <article class="exp-card glass-card rounded-[var(--r-2xl)] p-8 md:p-10 border border-gray-100">
                                 <div class="flex flex-col xl:flex-row-reverse xl:justify-between xl:items-start gap-4 mb-8">
                                     <div>
@@ -5134,3 +5144,7 @@
 
 </body>
 </html>
+
+
+
+
